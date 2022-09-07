@@ -1,0 +1,48 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "date-converter",
+  "title": "date converter",
+  "description": "date converter",
+  "icon": "command-icon.png",
+  "author": "chnyangjie",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "date converter",
+      "description": "Template for showing a static list and a detail view",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "timestring",
+          "placeholder": "timestamp default now",
+          "type": "text",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.39.2",
+    "dateformat": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/dateformat": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
