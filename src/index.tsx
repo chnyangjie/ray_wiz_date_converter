@@ -21,7 +21,7 @@ export default function Command(props: { arguments: Arguments }) {
           const formated = dateFormat(timeInt, format)
           return <List.Item
             key={format}
-            icon="list-icon.png"
+            icon="icons8-light-blue-clock-100.png"
             title={format}
             subtitle={formated}
             actions={
