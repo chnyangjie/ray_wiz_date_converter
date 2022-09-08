@@ -26,7 +26,7 @@ export default function Command(props: { arguments: Arguments }) {
             subtitle={formated}
             actions={
               <ActionPanel>
-                <Action.CopyToClipboard title="yyyy-MM-dd" content={`${formated}`} />
+                <Action.CopyToClipboard title="Copy To Clipboard" content={`${formated}`} />
               </ActionPanel>
             }
           />
